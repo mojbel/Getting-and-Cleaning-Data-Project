@@ -3,8 +3,8 @@ library(plyr)
 file_URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 files <- "Dataset.zip"
 download.file(file_URL, files, method="curl")
-unzip(files, list = FALSE, overwrite = TRUE, exdir = "./GCD")
-setwd("/Users/mojbel/Dropbox/Data_Science/JHU/GCD/UCI HAR Dataset")
+unzip(files, list = FALSE, overwrite = TRUE)
+setwd("/Users/mojbel/Dropbox/Data_Science/JHU/2. GCD/UCI HAR Dataset")
 
 x_train <- read.table("train/X_train.txt")
 y_train <- read.table("train/y_train.txt")
